@@ -21,3 +21,21 @@ toggleBtn.addEventListener('click', function(){
     }
 
 });
+
+const navBar = document.getElementById("navBar");
+const topBtn = document.querySelector(".bottom-to-top-btn");
+
+window.addEventListener('scroll', function(){
+
+    const scrollHeight = window.pageYOffset;
+    const navHeight = navBar.getBoundingClientRect().height;
+
+    if(scrollHeight > navHeight) {
+
+        navBar.classList.add("fixed-nav");
+    }
+    else {
+
+        navBar.classList.remove("fixed-nav");
+    }
+})
