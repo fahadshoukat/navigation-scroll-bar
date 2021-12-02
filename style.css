@@ -162,8 +162,8 @@ footer p {
 .bottom-to-top-btn {
     font-size: 16px;
     position: fixed;
-    bottom: 50px;
-    right: 50px;
+    bottom: 30px;
+    right: 20px;
     display: grid;
     background: hsla(182, 63%, 54%);
     width: 25px;
