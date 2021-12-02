@@ -154,3 +154,32 @@ footer p {
     text-align: center;
     margin-bottom: 0;
 }
+
+.bottom-to-top-btn {
+    font-size: 16px;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    display: grid;
+    background: hsla(182, 63%, 54%);
+    width: 25px;
+    height: 25px;
+    place-items: center;
+    border-radius: 8px;
+    color: white;
+    animation: bounce 2s ease-in-out infinite;
+    visibility: hidden;
+    z-index: -100;
+}
+
+@keyframes bounce {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.5);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
