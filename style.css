@@ -101,3 +101,13 @@ nav {
     background: white;
     color: hsla(182, 63%, 54%);
 }
+
+.sections {
+    height: 80vh;
+    background-color: white;
+    text-align: center;
+}
+
+.title span {
+    color: hsla(182, 63%, 54%);
+}
