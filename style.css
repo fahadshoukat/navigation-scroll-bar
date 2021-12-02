@@ -1,0 +1,71 @@
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: lightgrey;
+}
+
+#home {
+    background-image: url(images/kai-cheng-8xLvH52N7eE-unsplash.jpg);
+    height: 100vh;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+nav {
+    background-color: white;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.toggle-btn {
+    background: transparent;
+    cursor: pointer;
+    border-color: transparent;
+    transition: 0.3s linear;
+    padding: 5px 10px;
+}
+
+.toggle-btn:hover {
+    color: hsla(182, 63%, 54%);
+}
+
+.logo {
+    height: 50px;
+    padding: 5px 10px;
+}
+
+.links-container {
+    height: 0;
+    overflow: hidden;
+    transition: 0.3s linear;
+} 
+
+.show-links {
+    height: 200px;
+}
+
+.links a {
+    background: white;
+    color:  hsl(210, 22%, 49%);
+    display: block;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 0px;
+}
+
+.links a:hover{
+    color: black;
+}
+
+
