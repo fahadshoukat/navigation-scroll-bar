@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-size: 1.5rem;
 }
 
 html {
@@ -45,7 +46,7 @@ nav {
 }
 
 .logo {
-    height: 50px;
+    height: 60px;
     padding: 5px 10px;
 }
 
@@ -65,7 +66,7 @@ nav {
     display: block;
     text-decoration: none;
     font-weight: bold;
-    padding: 5px 0px;
+    padding: 5px 20px;
 }
 
 .links a:hover{
@@ -148,6 +149,13 @@ nav {
     }
 }
 
+@media screen and (max-width: 768px) {
+    * {
+        font-size: 1.2rem;
+    }
+    
+}
+
 footer {
     background:  hsl(209, 61%, 16%);
     padding: 5rem 1rem;
@@ -160,20 +168,19 @@ footer p {
 }
 
 .bottom-to-top-btn {
-    font-size: 16px;
     position: fixed;
     bottom: 30px;
     right: 20px;
     display: grid;
     background: hsla(182, 63%, 54%);
-    width: 25px;
-    height: 25px;
+    padding: 5px;
     place-items: center;
     border-radius: 8px;
     color: white;
     animation: bounce 2s ease-in-out infinite;
     visibility: hidden;
     z-index: -100;
+    font-size: 1rem !important; 
 }
 
 .show-link {
